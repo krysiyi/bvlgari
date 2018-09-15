@@ -1,0 +1,181 @@
+@import "header";
+@import "footer";
+.content{width:100%;padding-left:3%;padding-right:3%;position: relative;min-height:800px;
+    .empty{
+        text-align: center;
+        i{display: inline-block;margin-top: 10%;}
+        p{
+        margin-top: 30px;    
+        margin-bottom: 110px;
+        font-size: 20px;
+        line-height: 40px;}
+        button{
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 2.5;
+        letter-spacing: 1.8px;
+        color: #ffffff;
+        background: #000;
+        padding: 10px 30px;
+        text-transform: uppercase;
+        border: none;
+        }
+    }
+}
+.content .left{
+	margin-top: 60px;
+	width:65%;
+	h1{
+    font-size: 30px;
+    font-weight: 300;
+    margin: 0px 0 40px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 8px
+    }
+} 
+
+.content .left #mycart li{
+    height:320px;
+	border-top:1px solid #9b9b9b;
+	.com-details{
+	    float: left;
+	    min-height: 75px;
+        position: relative;
+        width: 65%;
+        padding: 50px 0 0 0;
+        .com-img{
+                position: static;
+                vertical-align: top;
+                width: 35%;
+                max-width: 180px;
+                float: left;
+                padding: 18px 0;
+                background: #f0ede8;
+            img{ width: 180px;}
+        }
+        div{
+            vertical-align: top;
+            white-space: normal;
+            width: 65%;
+            float: left;
+            padding-left: 6%;
+            strong{
+                display: inline-block;
+                font-weight:700;
+                font-size: 18px;
+                text-transform: uppercase;
+                letter-spacing: 2px;
+                color: #000;
+                white-space: normal;
+            }
+            p{
+                letter-spacing: 1px;
+                padding-top: 20px;
+                color: #3d3d3d;
+                font-size: 14px;
+                margin-bottom: 10px;
+            }
+            b,i{font-size: 12px;}
+            section{
+                    padding-top: 25px;
+                a{  display: inline-block;
+                    min-width: 135px;
+                    text-align: center;
+                    padding: 10px;
+                    font-size: 13px;
+                    text-transform: uppercase;
+                    border: 1px solid #000;
+                    margin-right: 10px;
+                }
+                a:hover{
+                    background: black;
+                    color: white;
+                }        
+            }
+        }
+   
+	}
+	.com-price{
+	    position: relative;
+        padding-bottom: 40px;
+        text-align: right;
+         float: right;
+         width: 35%;
+             padding: 50px 0;
+        p>i{
+            font-size: 20px;
+            line-height: 20px;
+            text-align: center;
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            border: 1px solid black;
+            font-style: normal;
+            cursor: pointer;
+        }
+        p .up{
+            margin-right: 13px;
+        }
+        p{font-size: 12px;text-align:left;padding-top: 20px;font-weight: bold;padding-left: 60px;
+        span,i{
+            line-height: 16px;
+            float: right;
+            font-size: 20px;
+        }
+        span{padding: 0 15px;}
+        }
+        p:last-child{margin-top: 30px;}
+        
+	}
+}
+.content .right{
+	height:380px;
+	background: #f2f0ec;
+    margin-bottom: 25px;
+    position: absolute;
+    top:160px;
+    right: 3%;
+    width: 27%;
+    margin-top: 70px;
+    color: #000;
+    text-align: center;
+    strong{
+        display: block;
+        padding: 40px 0 20px 0;
+        text-align: center;
+        font-size: 24px;
+        text-transform: uppercase;
+        letter-spacing: 5px;
+        font-weight: 400;
+        border-bottom: 2px solid #ceccc4;
+        }
+    p{
+        font-size: 14px;
+        font-weight: 500;
+        letter-spacing: 1.6px;
+        text-align: left;
+        padding: 15px 0;
+        padding-left: 25px;
+        line-height: 20px;
+        span{
+        float: right;    
+        font-size: 16px;
+        font-weight: 700;
+        letter-spacing: 1px;
+        padding: 15px 0;
+        padding-right: 25px;
+        line-height:0px;}
+    }
+    p:nth-child(4){border-top: 2px solid #ceccc4;}
+    button{
+    margin-top: 20px;    
+    border: none;
+    width: 80%;
+    padding: 12px 18px;
+    letter-spacing: 1.8px;
+    height: auto;
+    background: #000;
+    color: #fff;
+    font-size: 18px;}
+}

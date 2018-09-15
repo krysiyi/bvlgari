@@ -1,0 +1,104 @@
+@import "header";
+@import "footer";
+.page-title h1 {
+    font-size: 1.5rem;
+    font-weight: 400;
+    letter-spacing: .375rem;
+    text-transform: uppercase;
+    padding: 10px 0;
+    text-align: center;
+}
+img{width:100%}
+#btn_complete_list {
+    display: inline-block;
+    text-align: center;
+    position: relative;
+    padding: 15px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    margin: 15px 0;
+    cursor: pointer;
+    transition: all 600ms cubic-bezier(.23,1,.32,1);
+    transition-timing-function: cubic-bezier(.23,1,.32,1);
+    font-size: .8125rem;
+    font-family: "FuturaStdHeavy";
+    color: #000;
+    letter-spacing: .1875rem;
+    text-transform: uppercase;
+    text-align: center;
+}
+#btn_complete_list.open:after {
+    -webkit-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+}
+#btn_complete_list:after {
+    content: " ";
+    display: block;
+    width: 0;
+    border: 6px inset;
+    margin-top: -5px;
+    border-color: transparent transparent transparent #000;
+    border-left-style: solid;
+    border-right-width: 0;
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
+    position: absolute;
+    right: 50%;
+    bottom: -8px;
+    z-index: 1;
+    height: 0;
+    transition: all 600ms cubic-bezier(.23,1,.32,1);
+    transition-timing-function: cubic-bezier(.23,1,.32,1);
+}
+#complete_list {
+    text-align: center;
+}
+#complete_list ul {
+    list-style: none;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#complete_list h4{
+    margin: 40px 0 0 0;
+    padding-bottom: 25px;
+    font-size: .8125rem;
+    font-family: "FuturaStdHeavy";
+    color: #000;
+    letter-spacing: .1875rem;
+    text-transform: uppercase;
+}
+#complete_list ul li {
+    display:inline-block;
+    margin: 0 15px 7px 15px;
+}
+#complete_list ul li a {
+    color: #000;
+}
+
+.search-form ul {
+    list-style: none;
+}
+.stores{
+    width: 100%;
+    height: 100%;
+    background: #fff;
+}
+#complete_list .stores li {
+    display: block;
+    text-align: left;
+    left: 35%;
+    position: relative;
+    width: 50%;
+}
+#complete_list .stores p {
+    margin-bottom: 0;
+}
+#complete_list .stores .store-type {
+    text-transform: uppercase;
+}
+#complete_list .stores h4 {
+    padding-bottom: 0;
+}

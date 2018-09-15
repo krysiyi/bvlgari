@@ -1,0 +1,158 @@
+@import "header";
+@import "footer";
+.content{
+    .banner_img{
+        margin-bottom: 0;
+        position: relative;
+        img{
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+    }
+    h2{
+        padding-bottom: 10px;
+        margin-top: -50px;
+        text-align: center;
+        font-size: 30px;
+        letter-spacing: 5px;
+        text-transform: uppercase;
+        color: #000;
+        font-weight: 400;
+        position: relative;
+    }
+    .descrip{
+        text-align: center;
+        margin-bottom: 0;
+        line-height: 1.78571;
+        padding: 50px;
+        background: #f0ede8;
+        p{
+            display: inline-block;
+            max-width: 670px;
+            font-size: 14px;
+        }
+    }
+    .filter{
+        min-height: 81px;
+        padding: 15px 0;
+        position: relative;
+        border-bottom: 1px solid #e6e6e6;
+        letter-spacing: 1px;
+    }
+    .columns{
+        padding-top: 0;
+        position: relative;
+        z-index: 1;
+        max-width: 1440px;
+        margin: 0 auto;
+    }
+}
+
+.colum_main{
+    padding: 45px 30px 30px;
+    .div_content{
+        .product{
+            p{
+                text-align: center;
+                line-height: 36px;
+                font-size: 27px;
+                letter-spacing: 6px;
+                text-transform: uppercase;
+                font-weight: 400;
+                padding: 20px;
+            }
+            .see_more{
+                height: 45px;
+                width: 240px;
+                border: 1px solid #4e4e4e;
+                margin: 10px auto;
+                letter-spacing: 1px;
+                line-height: 20px;
+                background: #fff;
+                color: #000;
+                display: block;
+                margin-bottom: 50px;
+                font-family: 'FuturaBook';
+                font-size: 12px;
+            }
+            .see_more:hover{
+                background: #000;
+                color: #fff;
+            }
+            ol {
+                margin-bottom: 30px;
+                font-size: 0;
+                li {
+                    padding: 10px;    
+                    vertical-align: top;
+                    width: 25%;
+                    display: inline-block;
+                    .product_info{
+                    width: 100%;
+                    background-color: #f0ede8;
+                    height: 0;
+                    padding-bottom: 141.3636363636364%;
+                    position: relative;
+                    .product_photo{
+                            display: block;
+                            vertical-align: middle;
+                            left: 0;
+                            position: absolute;
+                            top: 50%;
+                            -webkit-transform: translateY(-50%);
+                            transform: translateY(-50%);
+                            width: 100%;
+                            img{
+                                height: auto;
+                                max-width: 100%;
+                            }
+                    }
+                    .product_details{
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                            padding: 20px;
+                            width: 100%;
+                            height: 100%;
+                            background: #2c2c2c;
+                            color: #fff;
+                            transition: opacity .4s ease;
+                            text-align: center;
+                            opacity: 0;
+                            z-index: -1;
+                            div{margin-top: 40%;}
+                            a{color: white;}
+                            p{padding: 0;}
+                            .small{
+                                color: #fff;
+                                font-size: 13px;
+                                text-transform: uppercase;
+                                letter-spacing: 5px;}
+                            button{
+                                    position: absolute;
+                                    left: 0;
+                                    bottom: 0;
+                                    width: 100%;
+                                    height: 80px;
+                                    background: #000;
+                                    color: #fff;
+                                    text-transform: uppercase;
+                                    letter-spacing: 3px;
+                                    font-size: 12px;
+                                    border: 0;
+                                    white-space: normal;
+                            }
+                        }
+                    }
+                    .product_info:hover{
+                        .product_details{
+                            opacity: 1;
+                            z-index: 1;
+                        }
+                    }
+                }
+            }    
+        } 
+    }
+}

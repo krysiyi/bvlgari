@@ -1,0 +1,57 @@
+	<link rel="stylesheet" type="text/css" href="/css/header.css">
+	<div class="header_top">
+		<ul class="nav_left">
+			<li><a href="/html/searchStore.html"><i class="iconfont icon-dizhi"></i></a></li>
+			<li><a href="javascript:"><i class="iconfont icon-duanxin"></i></a></li>
+			<li id="search"><a href="javascript:"><i class="iconfont icon-sousuo"></i></a>
+				<input type="text" class="keyword" autofocus="autofocus" placeholder="请输入查找关键字"/>
+			</li>
+		</ul>
+		<ul class="nav_right">
+			<li id="clicklogin"><a href="javascript:"><i class="iconfont icon-wodejuhuasuan"></i></a></li>
+			<li><a href="javascript:"><i class="iconfont icon-xiangqu"></i></a></li>
+			<li id="clickcart"><a href="/html/cart.html"><i class="iconfont icon-gouwu"></i></a></li>
+			<li id="exit"><a href="javascript:">退出</a></li>
+		</ul>
+	</div>
+	<div class="header_middle">
+		<h1 id="logo"><a href="/index.html"><img src="/images/indexImg/header-logo.png"/></a></h1>
+	</div>
+	<div class="header_bottom">
+		<ul>
+			<li class="wrapmenu"><a id="item1" href="javascript:">BVIGARI品牌</a><div class="bul-main-nav-item item1"></div></li>
+			<li class="wrapmenu"><a id="item2" href="javascript:">故事</a><div class="bul-main-nav-item item2"></div></li>
+			<li class="wrapmenu"><a id="item3" href="javascript:">高级珠宝</a><div class="bul-main-nav-item item3"></div></li>
+			<li class="wrapmenu"><a id="jewel" href="javascript:">珠宝</a><div class="bul-main-nav-item jewel"></div></li>
+			<li class="wrapmenu"><a id="item5" href="javascript:">BRIDAL系列</a><div class="bul-main-nav-item item5"></div></li>
+			<li class="wrapmenu"><a id="watch" href="javascript:">腕表</a><div class="bul-main-nav-item watch"></div></li>
+			<li class="wrapmenu"><a id="item7" href="javascript:">皮具</a><div class="bul-main-nav-item item7"></div></li>
+			<li class="wrapmenu"><a id="item8" href="javascript:">配饰</a><div class="bul-main-nav-item item8"></div></li>
+			<li class="wrapmenu"><a id="perfume" href="javascript:">香水</a><div class="bul-main-nav-item perfume"></div></li>
+			<li class="wrapmenu"><a id="item10" href="javascript:">礼物</a><div class="bul-main-nav-item item10"></div></li>
+			<li class="wrapmenu"><a id="item11" href="javascript:">宝格丽酒店及度假村</a><div class="bul-main-nav-item item11"></div></li>
+		</ul>
+	</div>
+<script type="text/html" id="navlist">
+	<ul class="sub">
+	{{each data item index}}
+		<li class="nav">
+		{{each item value key}}
+				{{if key=="title"}}
+				<strong>{{value}}</strong>
+				{{else if key=="list"}}
+				<ul class="submenus">{{each value li num}}
+				<li class="level"><a href="javascript:"><span class="list{{num}}">{{li}}</span></a></li>
+				{{ /each}}
+				</ul>
+				{{else}}
+				<div class="figure">
+				<img src={{value}} alt="">
+				</div>
+				{{ /if}}
+		{{ /each}}
+		</li>
+	{{ /each }}	
+	</ul>
+</script>
+<script src="/js/nav.js"></script>

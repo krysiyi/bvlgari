@@ -1,0 +1,11 @@
+require(["config"],function(){
+	require(["jquery","header","footer","backtop"],function($,header,footer,backtop){
+		header.init();
+		footer.init();
+		backtop.init();
+		$("#btn_complete_list").on("click",function(){
+			$(this).toggleClass("open");
+			$("#complete_list").toggle();
+		})
+	});
+})

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>创建新客户账号</title>
+		<link rel="icon" type="image/x-icon" href="/images/indexImg/index.ico">
+		<link rel="stylesheet" type="text/css" href="/css/register.css"/>
+		<script type="text/javascript" src="/libs/require.js" data-main="/js/register.js"></script>
+	</head>
+	<body>
+		<header></header>
+		<div class="content">
+			<div class="register-block">
+				<div class="title">
+					<strong>请填写以下表格完成账号注册</strong>
+				</div>
+				<form>
+					<fieldset>
+						<div><span>邮箱*</span><input class="register" id="loginId"/></div>
+						<div><span>手机号码</span><input  class="register" type="text" id="phone" /></div>
+						<p class="alt">请输入正确邮箱</p><p class="alt">请输入正确手机号</p>
+						<div><span>称谓</span><select>
+							<option value="">先生</option>
+							<option value="">太太</option>
+							<option value="">女士</option>
+						</select></div>
+						<div><span>姓氏</span><input type="text"/></div>
+						<div><span>名字</span><input type="text"/></div>
+						<div><span>所在地</span><select name="">
+							<option value="">中国大陆</option>
+							<option value="">美国</option>
+						</select></div>
+						<div><span>密码*</span><input  class="register" type="password" id="password"/>
+						<div>
+						<span class="alt">该字段的最小长度必须等于或大于8个符号。前后空格将会被忽略</span>
+						<span class="alt">至少包含2种不同类型。字符类型：小写、大写、数字、特殊字符</span>
+						</div>
+						</div>
+						
+					</fieldset>
+						<p>我已经阅读和理解<a href="javascript:">隐私政策</a>，我声明本人已年满18岁，并且：</p>
+						<p><input type="checkbox"/>我允许我的个人数据可被用于统计分析，剖析目的使用</p>
+						<p><input type="checkbox"/>本人同意将我的个人数据接收有关新品、活动、倡议和个性化服务的信息</p>
+						<input id="btn" type="submit" value="提交"/>
+				</form>
+				
+			</div>
+		</div>
+		<footer></footer>
+	</body>
+</html>

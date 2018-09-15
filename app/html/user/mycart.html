@@ -1,0 +1,37 @@
+<div class="left">
+			<h1>我的购物袋</h1>
+			<ul id="mycart">
+				
+				<script type="text/html" id="cartlist">
+					{{each data}}
+						<li>
+							<div class="com-details">
+								<a class="com-img" href="javascript:"><img src={{$value.imgurl}} /></a>
+								<div>
+									<strong><a href="javascript:">{{$value.series}}</a></strong>
+									<p>{{$value.about}}</p>
+									<p>产品编号:<span>{{$value.name}}</span></p>
+									<section>
+									<a href="javascript:">查看</a>
+									<a class="del" href="javascript:">删除</a>
+									</section>
+								</div>
+							</div>
+							<div class="com-price">
+								<p>价格<span class="price">￥{{$value.price}}</span></p>
+								<p>数量<i class="up">+</i><span class="num">{{$value.num}}</span><i class="down">-</i></p>
+								<p>小计<span class="all">￥{{$value.price*$value.num}}</span></p>
+							</div>
+						</li>
+					{{/each}}
+				</script>
+
+			</ul>
+		</div>
+<div class="right">
+	<strong>订单明细</strong>
+	<p>小计<span class="pay">￥100</span></p>
+	<p>运费(免邮费)<span>￥0</span></p>
+	<p>订单金额<span class="allpay">￥100</span></p>
+	<button>结账</button>
+</div>

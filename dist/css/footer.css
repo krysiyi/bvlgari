@@ -1,0 +1,130 @@
+footer .page-bottom {
+  max-width: 100% !important;
+  background-color: #f0ede8;
+  width: 100% !important;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 80px 0; }
+
+footer .page-bottom h3 {
+  display: block;
+  font-family: 'FuturaBook';
+  font-size: 27px;
+  padding: 20px 0;
+  margin: 0;
+  letter-spacing: 10px; }
+
+footer .page-bottom form {
+  margin-top: 27px;
+  width: 50%;
+  max-width: 782px;
+  vertical-align: top;
+  display: flex !important;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  zoom: 1; }
+
+footer .page-bottom form .custom-form.select {
+  width: 45%;
+  margin-right: 15px;
+  position: relative;
+  margin-bottom: 20px; }
+
+footer .page-bottom form .bul-locator-submit {
+  vertical-align: top;
+  display: inline-block;
+  zoom: 1;
+  width: 43%;
+  max-width: 333px;
+  margin-top: 31px;
+  background-color: transparent;
+  border: 1px solid #000;
+  text-transform: uppercase;
+  font-size: 14px;
+  height: 45px;
+  cursor: pointer;
+  letter-spacing: 2px; }
+
+footer .page-bottom form .bul-locator-submit:hover {
+  background-color: black;
+  color: white; }
+
+footer .page-bottom form .custom-form.select select {
+  width: 100%;
+  border: 1px solid #e6e6e6;
+  appearance: none;
+  border-radius: 0;
+  padding: 12px 8px 8px;
+  background-color: #fff;
+  transition: border-color .3s ease; }
+
+footer .footer {
+  background-color: #1d1d1f;
+  padding-top: 50px; }
+
+footer .footer .link {
+  padding: 0 20%;
+  display: flex;
+  justify-content: space-around; }
+
+footer .footer .link ul {
+  width: 190px; }
+
+footer .footer .link ul li {
+  height: 30px; }
+
+footer .footer a {
+  font-size: 12px;
+  color: white; }
+
+footer .footer .link ul li:first-child a {
+  height: 40px;
+  color: #5a5a5d;
+  font-size: 14px; }
+
+footer .footer .link .youku {
+  height: 90px; }
+
+footer .footer .link .youku a {
+  display: inline-block;
+  width: 40px;
+  height: 30px;
+  background: url("/images/indexImg/sprite.png") no-repeat;
+  background-position: -100px -153px; }
+
+footer .footer .link .youku a:hover {
+  background-position: -150px -153px; }
+
+footer .footer .bottom {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 130px; }
+
+footer .footer .bottom a {
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 8px; }
+
+.bul-footer-options {
+  width: 71%;
+  max-width: 100%;
+  border-top: 1px solid #2f2f30;
+  position: relative;
+  text-align: center;
+  margin: auto;
+  padding: 70px 0 20px; }
+
+.bul-footer-options:before {
+  content: '';
+  position: absolute;
+  width: 223px;
+  height: 19px;
+  top: -10px;
+  left: 50%;
+  margin-left: -111.5px;
+  background: #1d1d1f url(/images/indexImg/footer-logo.png) no-repeat center top; }

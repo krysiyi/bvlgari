@@ -1,0 +1,39 @@
+@import "header";
+@import "footer";
+.content{text-align: center;height:100%;min-height:850px;}
+.title{padding-top: 100px;}
+strong{
+	display: block;
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 80px;
+    text-transform: uppercase;
+    letter-spacing: 8px;
+    line-height: 38px;
+}
+.content .block-login{display:flex;justify-content:center;font-family:'Lato';font-size: 14px;}
+.content .block-login .login-right,.content .block-login .login-left{height:400px;width:350px;}
+.content .block-login h4{font-weight: normal;text-transform: uppercase;font-size: 18px;letter-spacing: 2px;margin-bottom: 40px;}
+.content .block-login .qrcode{height:180px;width:180px; border:1px solid #cccccc;margin:0 auto;margin-bottom: 20px;}
+.content .block-login .qrcode img{width:100%}
+.content .block-login .login-left p{margin-bottom: 10px;}
+.content .block-login .login-left{border-right:1px solid #9b9b9b;}
+.content .block-login .login-right{text-align: left;padding-left: 80px;}
+.content .block-login .login-right p{color: #3d3d3d; font-weight: 400;letter-spacing: 1.6px;text-transform: uppercase;margin-bottom: 15px;line-height: 17px;}
+.content .block-login .login-right form input{
+	background: #fff;
+    background-clip: padding-box;
+    border: 1px solid #9b9b9b;
+    border-radius: 1px;
+    color: #1d1d1f;
+    font-family: FuturaBook;
+    font-size: 14px;
+    padding: 13px 15px;
+    vertical-align: baseline;
+    width: 100%;
+    margin-bottom: 15px;
+}    
+.content .block-login .login-right form button{width: 100%;max-width: 200px;height: 58px; line-height: 58px;background:none;border:1px solid black;margin:10px 0;}
+.content .block-login .login-right a{text-decoration:underline;font-size:12px;}
+.content .block-login .login-right>p{font-size:12px}
+.content .block-login .login-right form button:hover {cursor:pointer;background: #000;border: 1px solid #000;color: #fff;}

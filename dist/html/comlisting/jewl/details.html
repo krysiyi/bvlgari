@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+	<meta charset="UTF-8" />
+	<title>商品详情</title>
+	<link rel="icon" type="image/x-icon" href="/images/indexImg/index.ico">
+	<link rel="stylesheet" type="text/css" href="/css/details.css"/>
+	<script type="text/javascript" src="/libs/require.js" data-main="/js/details.js"></script>
+</head>
+<body>
+
+<header></header>
+<div class="content">
+	<div class="product_on">
+		
+			<script type="text/html" id="productdetails">
+				{{each data}}
+				<div class="magnifier">
+					<div id="box">
+					<img src={{$value.imgurl}} id="small_img" />
+					<p id="big_box">
+						<img src={{$value.imgurl}} id="big_img"/>
+					</p>
+					</div>
+				</div>
+				<div class="introduct">
+					<p><span class="type">{{$value.type}}</span></p>
+					<h3 class="series">{{$value.series}}</h3>
+					<p><span class="name">{{$value.name}}</span></p>
+					<p class="about">{{$value.about}}<br />
+					<strong>￥{{$value.price}}</strong>
+					</p>
+					<select>
+						<option value="1">数量:1</option>
+						<option value="2">数量:2</option>
+						<option value="3">数量:3</option>
+					</select>
+					<button id="{{$value.name}}">加入购物袋</button>
+					<a href="/html/searchStore.html">寻找附近的店铺</a>
+				</div>
+				{{/each}}
+			</script>
+			<!--<p><span class="type">项链</span></p>
+			<h3 class="series">bzero1</h3>
+			<p><span class="name">sdgno235346</span></p>
+			<p class="about">B.zero1 Labyrinth项链，18K玫瑰金和白金吊坠，边缘密镶钻石(0.41克拉)，18K玫瑰金链条
+			<strong>￥1234</strong>
+			</p>
+			<select>
+				<option value="1">数量:1</option>
+				<option value="1">数量:2</option>
+				<option value="1">数量:3</option>
+			</select>
+			<button>加入购物袋</button>
+			<a href="/html/searchStore.html">寻找附近的店铺</a>-->
+		
+	</div>
+	<div class="info">
+		<div class="edito">
+			<ul>
+				<li class="ac"><a>描述</a></li>
+				<li><a>灵感</a></li>
+				<li><a>宝格丽珠宝</a></li>
+			</ul>
+			<div>
+				<p class="ac">B.zero1 Labyrinth戒指饰以玫瑰金和白金打造的迷人螺旋线条，展现个性表达的强大力量。此款戒指从举世闻名的圆形露天剧场――罗马斗兽场汲取灵感，呈现Bulgari宝格丽灵动的设计之衷：自成一格、繁华罗马和无限创意。其独特纯粹的螺旋造型，象征着该系列的开拓精神，过去、现在和未来的和谐相承在这辉煌壮丽的永恒之城中得以体现。</p>
+				<p>时钟敲响了千禧年的钟声，而世界也迎来了Bulgari宝格丽全新的螺旋珠宝作品。一款赞颂永恒和现代而具有远见设计的戒指。该设计融合罗马斗兽场的宏伟气势、非凡不朽的历史遗迹,采用意大利现代设计中的硬朗线条。</p>
+				<p>Bulgari宝格丽珠宝为意大利制造，体现意大利设计风格和精湛工艺。</p>
+			</div>
+		</div>
+	</div>
+</div>
+<footer></footer>
+</body>
+</html>
+
+

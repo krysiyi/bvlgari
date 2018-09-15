@@ -1,0 +1,70 @@
+@import "header";
+@import "footer";
+.register-block{
+    width: 713px;
+    color: #000;
+    font-family: 'Lato';
+    margin: 0 auto 5% auto;
+    width: 750px;
+    max-width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 14px;
+}
+.title{
+    height: auto;
+    margin: 0 auto;
+    padding-top: 100px;
+    margin-bottom: 30px !important;
+    position: relative;
+    font-size: 30px;
+    text-align: center;
+    text-transform: uppercase;
+}
+strong{
+    display: block;
+    font-weight: 500;
+    margin-bottom: 80px;
+    text-transform: uppercase;
+    letter-spacing: 8px;
+    line-height: 38px;
+}
+
+.register-block form fieldset{width: 100%;border: none;position: relative;}
+.register-block form fieldset div{width: 200px;float: left;margin-left: 26px;margin-bottom: 40px;}
+.register-block form fieldset div:last-child div{width:400px;margin: 0;}
+.register-block form fieldset div:first-child{width: 425px;}
+.register-block form fieldset p.alt{display:none;position:absolute;top:88px;left:26px;height:12px;width: 100%;font-size: 12px;color:#e02b27;}
+.register-block form fieldset p.alt:nth-of-type(2){top:88px;left:480px;}
+.register-block form fieldset p.alt.ac{display:block;}
+.register-block form fieldset div input,.register-block form fieldset div select{width: 100%;height: 46px;margin-top: 15px;padding-left: 10px;}
+input[type="checkbox"] {
+width: 18px;
+height: 18px;
+margin-right: 5px;
+}
+input[type="checkbox"]:after{content: " ";display: block;border: 1px solid black;
+width: 18px;
+height: 18px;
+background: none;}
+.register-block form p a{text-decoration:underline;}
+.register-block form p{height: 40px;font-size: 14px;}
+.register-block form p:nth-of-type(1){font-size: 16px;}
+input[type="submit"]{
+    display: block;
+    height: 60px;
+    line-height: 60px;
+    min-width: 255px;
+    margin: 0 auto;
+    margin-top: 60px;
+    background: none;
+    border-radius: 0;
+    border: 1px solid black;}
+input[type="submit"]:hover {
+    cursor: pointer;
+    background: #000;
+    border: 1px solid #000;
+    color: #fff;
+}
+span.alt{font-size: 12px;color:#e02b27;display: none;}
+span.alt.ac{display: block;}

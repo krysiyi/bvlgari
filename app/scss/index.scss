@@ -1,0 +1,87 @@
+@import "header";
+@import "footer";
+.content .banner{position: relative;}
+.content .banner img{width: 100%;}
+.content .banner section{text-align: center;width: 558px;height: 163px;color:black;background:rgba(255,255,255,.5);position: absolute;right: 50px;bottom: 50px;}
+.content .banner section button{transition: all .3s ease;width: 245px;height: 46px;margin-left: 8px;border: 1px solid black;background: none;}
+.content .banner section h3{height:92px;line-height: 92px;font-weight: normal;font-size:45px;font-family: "Sakkal Majalla";}
+.content .banner section button:hover{color: #CCCCCC;background:rgba(0,0,0,.4);cursor: pointer;}
+.content .bul-container{width: 100%;padding: 0 30px;}
+.content .bul-jewlry{padding-top: 45px;}
+.content .bul-container h2 {
+    margin:34px 0;
+    font-size: 27px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    font-weight: 400;
+}
+.content .bul-container .bul-block{display: flex;justify-content: space-between;}
+.content .bul-container h2:hover{text-decoration: underline;}
+.content .bul-container .bul-block .bul-l {width: 32.3%;}
+.content .bul-container .bul-block .bul-r {width: 66%;}
+.content .bul-container .bul-block img{width: 100%;border: none;}
+.content .bul-container .bul-block h3 {
+    padding: 10px 0 20px;
+    text-align: left;
+    width: 100%;
+    font-size: 20px;
+    text-transform: uppercase;
+    margin: 0;
+    color: #000;
+    font-weight: 400;
+}
+.bul-container .bul-pushes {
+    width: 80%;
+    max-width: 1170px;
+    margin: 0 auto;
+    text-align: center;
+    color: #000;
+    position: relative;
+    padding: 90px 0 110px;
+    border-top: 1px solid #dacaba;
+    margin-top: 20px;
+}
+.swiper-container {
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+.swiper-wrapper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    transition-property: transform;
+    box-sizing: content-box;
+}
+.bul-container .bul-pushes .swiper-slide{margin-right: 15px;}
+.bul-container .bul-pushes .swiper-slide h4 {
+    height: 48px;
+    overflow: hidden;
+    display: inline-block;
+    font-size: 17.5px;
+    text-transform: uppercase;
+    margin: 0;
+    font-weight: 400;
+    margin-bottom: 18px;
+}
+.bul-pushes:after {
+    content: '';
+    position: absolute;
+    width: 127px;
+    height: 71px;
+    top: -36px;
+    left: 50%;
+    margin-left: -65px;
+    background: url(/images/indexImg/star.png) top left no-repeat #fff;
+}
+.bul-container img {
+    display: block;
+    max-width: 100%;
+}
+

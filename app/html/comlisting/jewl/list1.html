@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="icon" type="image/x-icon" href="/images/indexImg/index.ico">
+		<link rel="stylesheet" type="text/css" href="/css/list1.css"/>
+		<script src="/libs/require.js" data-main="/js/list1.js"></script>
+		<script type="text/html" id="productlist">
+						
+		<ol>
+			{{each data}}
+			<li>
+				<div class="product_info">
+					<div class="product_photo">
+						<img src={{$value.imgurl}} />
+					</div>
+					<div class="product_details">
+						<div>
+						<a id={{$value.name}} href="javascript:"><p class="listtype"></p>
+						<p><span>B.ZERO1系列</span></p></a>
+						
+						<p class="small">￥{{$value.price}}</p>
+						</div>
+						<button id="addcart">添加到购物车</button>
+					</div>
+				</div>
+			</li>
+			{{/each}}
+		</ol>
+
+		</script>
+	</head>
+	<body>
+		<header></header>
+		<div class="content">
+			<div class="banner_img">
+				<img src="" />
+			</div>
+			<h2><span id="type"></span> - <span id="table"></span></h2>
+			<div class="descrip">
+				<p> </p>
+			</div>
+			<div class="filter">
+				
+			</div>
+			<div class="colums">
+				<div class="colum_main">
+					<div class="div_content">
+						
+						<div class="product">
+							<p>B.zero1</p>
+							<div class="product_list">
+
+							</div>
+							<button class="see_more">查看更多</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<footer></footer>
+	</body>
+</html>

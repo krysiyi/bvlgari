@@ -1,0 +1,1 @@
+"use strict";define(function(){function n(){}return n.prototype.init=function(){console.log("hhhhh")},new n});
